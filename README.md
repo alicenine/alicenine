@@ -1,16 +1,32 @@
-### Hi there 👋
+# <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"> Hi, I'm Vanilla | [![Profile Views](https://gpvc.arturio.dev/plasticsummer)](https://github.com/plasticsummer)
 
-<!--
-**plasticsummer/plasticsummer** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+  <a href="https://t.me/plasticsummer"><img src="https://www.icegif.com/wp-content/uploads/icegif-2013.gif"></a>
+    
+</p>
 
-Here are some ideas to get you started:
+<h3>
+    
+```python
+​
+import json
+from dataclasses import asdict, dataclass
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+@dataclass
+class Stack:
+    languages   : tuple[str, ...] = ("Python", "Bash", "HTML", "CSS")
+    misc        : tuple[str, ...] = ("Docker", "Linux", "FastAPI")
+    ongoing     : tuple[str, ...] = ("Django", "Java", "JavaScript")
+
+    def serialize(self):
+        return json.dumps(asdict(self), indent=4)
+
+
+stack = Stack()
+print(stack.serialize())
+printf("Добро пожаловать в ванильный мир!"
+​
+
+```
+</h3>
